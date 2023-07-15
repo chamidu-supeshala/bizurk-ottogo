@@ -797,11 +797,14 @@
     /**
      * Return the image cropped as Base64 data URL
      */
-    function getAsDataURL(quality) {
+    function getAsDataURL(format, quality) {
+      if (!format) {
+        format = 'image/png'
+      }
       if (!quality) {
         quality = 1;
       }
-      return self.canvas.toDataURL(quality);
+      return self.canvas.toDataURL(format, quality);
     }
   }
 })(window, jQuery);
