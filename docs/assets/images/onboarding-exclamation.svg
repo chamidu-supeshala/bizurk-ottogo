@@ -1,0 +1,43 @@
+<svg id="exclamation-an" xmlns="http://www.w3.org/2000/svg" viewBox="0 25 200 190">
+  <style>
+    @keyframes move-exclamation {
+      0% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(-17.5px);
+      }
+    }
+
+    #exclamation-an #exclamation-point {
+      animation: move-exclamation .75s ease-in-out both infinite alternate;
+    }
+
+    @keyframes scale-shadow {
+      0% {
+        transform: scale(.4);
+        opacity: 0;
+      }
+      25% {
+        opacity: .5;
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    #exclamation-an #shadow-bot {
+      transform-origin: 99.88px 193.81px;
+      animation: scale-shadow 2s ease-in-out both infinite;
+    }
+    #exclamation-an #shadow-top {
+      transform-origin: 99.88px 193.81px;
+      animation: scale-shadow 2s -1s ease-in-out both infinite;
+    }
+    
+  </style>
+  <ellipse id="shadow-bot" opacity=".5" cx="99.89" cy="193.81" rx="47.83" ry="10.88" fill="#ffc409"/>
+  <ellipse id="shadow-top" opacity=".5" cx="99.89" cy="193.81" rx="47.83" ry="10.88" fill="#ffc409"/>
+  <path id="exclamation-point" d="M99.89,159.84a17,17,0,1,1-17,17A17,17,0,0,1,99.89,159.84Zm0-113.55c-13.4,0-25.24,10.89-24.25,24.25.13,1.78,1.06,7.09,1.06,7.09l8.86,59.51a14.33,14.33,0,1,0,28.65,0l8.86-59.51s.93-5.31,1.06-7.09C125.12,57.18,113.28,46.29,99.89,46.29Z" fill="#ffc409"/>
+</svg>
